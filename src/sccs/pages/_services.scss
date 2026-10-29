@@ -1,0 +1,192 @@
+.services-intro{
+    padding-bottom: 0;
+    &__wrapper{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        gap:24px;
+        @media (min-width:1000px){
+            flex-direction: row;
+        }
+        >div{
+            flex:1;
+            width:100%;
+            @media (min-width:1000px){
+                &:last-child{
+                    flex:none;
+                    width:500px;
+                    min-width:500px;
+                }
+            }
+        }
+    }
+    &__images{
+        display:flex;
+        flex-wrap:wrap;
+        gap:12px;
+        padding-top:5px;
+    }
+    &__image{
+        max-width:120px;
+        img{
+            @include img-cover;
+        }
+    }
+    .sectionHead{
+        &__title{
+            font-weight:600;
+        }
+        &__subtitle{
+            color:#B7C8B2;
+        }
+        p{
+            @media (min-width:1000px){
+                font-size:rem(20px);
+            }
+        }
+    }
+    &__content{
+        padding:rem(50px);
+        background-color: var(--primary);
+        color:#F7F5EE
+    }
+    &__link{
+        display:flex;
+        align-items: center;
+        gap:rem(20px);
+        padding:rem(20px) 0;
+        border-bottom: 1px solid #F7F5EE;
+        justify-content: space-between;
+        >div{
+            display:flex;
+            align-items: center;
+            
+            gap:rem(20px);
+        }
+        span{
+            font-size:rem(22px);
+            font-weight:500;
+            color:#B7C8B2;
+            font-family: $secondary-font;
+        }
+        h3{
+            font-size:rem(34px);
+            margin:0;
+        }
+    }
+    &__arrow{
+        background-image: url("data:image/svg+xml,%3Csvg width='12' height='14' viewBox='0 0 12 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.29192 -4.00543e-05H6.58792V11.844L6.08392 11.214L11.8799 5.43596V7.23596L5.93992 13.14L-7.80821e-05 7.25396V5.45396L5.79592 11.214L5.29192 11.844V-4.00543e-05Z' fill='%23F7F5EE'/%3E%3C/svg%3E%0A");
+        width:12px;
+        height:14px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+.content-section{
+    .sectionHead{
+        &__subtitle{
+            font-size:rem(22px);
+            font-weight:500;
+            letter-spacing: 0;
+            font-family: $secondary-font;
+        }
+    }
+    .list{
+        list-style: none;
+        display:flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap:8px;
+        margin-top: rem(25px);
+        li{
+            padding:12px 16px;
+            border:1px solid var(--secondary);
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+    .note{
+        border:1px solid var(--primary);
+        background-color: #fff;
+        padding:20px 24px;
+        margin-top:rem(24px);
+        h3{
+            font-size:12px;
+            font-weight:600;
+            font-family: $primary-font;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        p{
+            margin:0;
+        }
+    }
+    &.personal-care{
+        background-color: var(--primary);
+        color:var(--secondary);
+        p{
+            color:#D3DCD0;
+        }
+        .sectionHead{
+            &__subtitle{
+                color:#B7C8B2;
+            }
+        }
+    }
+}
+.service-plan{
+    background-color: #E9EDE4;
+    .sectionHead{
+        display:flex;
+        flex-direction: column;
+        gap:rem(28px);
+        
+        @media (min-width:1000px){
+            &__title{
+                min-width:440px;
+            }
+            flex-direction: row;
+            gap:rem(90px);
+            p{
+                font-size: rem(20px);
+            }
+        }
+    }
+}
+
+
+@media (max-width:999px){
+    .services-intro{
+        &__link{
+            h3{
+                font-size:rem(30px);
+            }
+        }
+        &__content{
+            padding:rem(40px);
+        }
+    }
+    .content-section{
+        .row{
+            >div{
+                &:first-child{
+                    margin-bottom: rem(32px);
+                }
+            }
+        }
+    }
+}
+@media (max-width:767px){
+    .services-intro{
+        &__link{
+            h3{
+                font-size:rem(28px);
+            }
+        }
+        &__content{
+            padding:rem(28px);
+        }
+    }
+}

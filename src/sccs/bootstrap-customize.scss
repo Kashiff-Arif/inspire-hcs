@@ -1,0 +1,69 @@
+
+
+$font-family-base: "Instrument Sans", sans-serif;
+
+$secondary-font: "Cormorant Garamond", serif;
+
+
+$primary: #203E39;
+$secondary:#F7F5EE;
+$textcolor:#203E39;
+$gray:#C7C7C7;
+$body-bg:#F7F5EE;
+
+
+
+$font-size-base: 1.125rem;
+$body-color:$textcolor;
+$lead-font-weight:400;
+$line-height-base:1;
+$body-padding:0;
+
+
+
+
+
+
+
+
+
+
+// Table
+
+$table-bg: transparent;
+
+// Pagination
+
+// Select
+
+$form-select-padding-y:             0.70rem;
+$form-select-indicator-padding:     1rem;
+$form-select-bg:                    #f8f8f8;
+
+
+// Buttons
+
+$btn-padding-y:               19px;
+$btn-padding-x:               30px;
+$btn-border-radius:           2px;
+$btn-font-weight:             600;
+$btn-font-size:              1rem;
+
+// Checkbox
+
+$form-check-input-checked-bg-color: var(--primary);
+$form-check-input-border:                 1px solid var(--primary);
+$form-check-input-border-radius:          4px;
+$form-check-input-checked-color:         $textcolor;
+$form-check-input-checked-bg-color:       var(--primary);
+$form-check-input-checked-border-color:   #000;
+$form-check-input-focus-border:           var(--primary);
+$form-check-input-focus-box-shadow:       none;
+$form-check-label-color:                  $textcolor;
+
+
+//Table
+$table-cell-padding-y:        1.7rem;
+$table-cell-padding-x:        1rem;
+$table-th-font-weight: 400;
+$table-border-color: #BAC2E8;

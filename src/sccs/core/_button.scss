@@ -1,0 +1,54 @@
+
+.btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 1;
+    gap: rem(20px);
+    transition: 0.5s ease all;
+    opacity: 1 !important;
+    border: 1px solid transparent;
+    min-width:160px;
+    overflow: hidden;
+    border:1px solid transparent;
+    &:hover{
+       transform: translateY(-5px);
+    }
+    &.btn-secondary{
+        color:var(--primary);
+    }
+    &.btn-primary{
+        background-color: #315E51;
+        color:var(--secondary) !important;
+    }
+    &.btn-light{
+        color:#315E51;
+        background-color: transparent !important;
+        border-color: #315E51;
+    }
+    &:active , &.active , &:focus, &:focus-visible{
+        opacity: 60% !important;
+    }
+
+}
+.inline-buttons{
+    display:flex;
+    align-items: center;
+    margin-top:rem(60px);
+    gap:rem(35px);
+    .btn{
+        min-width:225px;
+    }
+    @media screen and (max-width:767px){
+        margin-top:rem(32px);
+        gap:rem(20px);
+    }
+    @media screen and (max-width:575px){
+        flex-direction: column;
+           .btn{
+            width:100%;
+           }
+    }
+}

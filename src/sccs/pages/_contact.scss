@@ -1,0 +1,177 @@
+.contact-hero{
+    padding-bottom: 0;
+    .sectionHead{
+        display:flex;
+        flex-direction: column;
+        align-items: start;
+        gap:15px;
+        h1{
+            margin:0;
+        }
+        @media (min-width:1000px){
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: space-between;
+            p{
+                min-width:340px;
+                width:340px;
+                margin:0;
+                font-size:rem(20px);
+            }
+        }
+    }
+    .alert{
+        margin:rem(30px) 0;
+        background-color: #fff;
+        border:1px solid var(--primary);
+        color:var(--primary);
+        font-size:rem(18px);
+        line-height: 1.2;
+        @media (min-width:1000px){
+            padding-left:50px;
+            padding-right:50px;
+            margin:rem(45px) 0;
+        }
+    }
+}
+.contact{
+    padding-top:0;
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap:rem(48px);
+        >div{
+            flex:1;
+            width:100%;
+        }
+        @media (min-width:1000px){
+            flex-direction: row;
+            gap:rem(72px);
+            >div{
+                &:last-child{
+                    min-width:400px;
+                    width:400px;
+                    flex:none;
+                }
+            }
+        }
+    }
+    &__service{
+        background-color: var(--primary);
+        color:var(--secondary);
+        padding:rem(35px);
+        @media (min-width:1000px){
+            padding:rem(55px);
+        }
+        p{
+             color:#D3DCD0;
+             font-size:15px;
+             margin:0;
+        }
+        .sectionHead{
+            &__subtitle{
+                color:#B7C8B2;
+            }
+            &__desc{
+                padding-bottom: 10px;
+                p{
+                    font-size:rem(18px);
+                }
+            }
+        }
+    }
+    &__note{
+        padding-bottom: rem(18px);
+        margin-bottom: rem(18px) !important;
+        border-bottom: 1px solid var(--secondary);
+        margin-top:10px !important;
+    }
+    &__details{
+        border-top:1px solid var(--primary);
+        margin-top:17px;
+    }
+    &__item{
+        display:flex;
+        gap:rem(20px);
+        padding:15px 0;
+        border-bottom:1px solid var(--primary);
+        h3{
+            font-size:15px;
+            font-weight:600;
+            font-family: $primary-font;
+            margin:0;
+            min-width:90px;
+        }
+        p{
+            font-size:rem(18px);
+            margin:0;
+            color:#315E51;
+            a{
+                text-decoration: underline;
+                @include desktop-hover{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    &__area{
+        margin-top:rem(48px);
+        margin-bottom: rem(48px);
+        h3{
+            font-size:rem(34px);
+            margin-bottom: 9px;
+            @media (max-width:999px){
+                font-size:rem(30px);
+            }
+            @media (max-width:767px){
+                font-size:rem(28px);
+            }
+        }
+        p{
+            font-size:15px;
+            font-weight:400;
+        }
+    }
+    &__employment{
+        background-color: #E9EDE4;
+        padding:rem(24px);
+        color:#315E51;
+        h4{
+            font-size:12px;
+            font-weight:600;
+            text-transform: uppercase;
+            font-family: $primary-font;
+            margin-bottom: 10px;
+            letter-spacing: 1.5px;
+        }
+        p{
+            font-size:15px;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+
+@media (max-width:999px) and (min-width:768px){
+    .contact{
+        &__column-wrapper{
+            display: flex;
+            gap:rem(40px);
+            >div{
+                width:50%;
+            }
+        }
+        &__area{
+            margin-top:0;
+            margin-bottom: 0;
+        }
+    }
+}
+@media (max-width:999px){
+    .contact{
+        &__employment{
+            margin-top:rem(45px);
+        }
+    }
+}

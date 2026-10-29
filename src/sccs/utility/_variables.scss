@@ -1,0 +1,61 @@
+
+:root {
+    --primary: #203E39;
+    --secondary: #F7F5EE;
+    --secondary-dark:#D3DCD0;
+    --textcolor: #203E39;
+    --gray:#535459;
+}
+
+@import "functions";
+// Fonts
+$secondary-font: "Cormorant Garamond", serif;
+$primary-font: "Instrument Sans", sans-serif;
+
+//** Primary Font
+// font sizes
+$h--1: (
+    base: rem(96px),
+    mobile: rem(48px),
+    tablet: rem(70px),
+    wide: rem(96px),
+);
+$h--2: (
+    base: rem(60px),
+    mobile: rem(38px),
+    tablet: rem(48px),
+    wide: rem(60px),
+);
+$h--3: (
+    base: rem(50px),
+    mobile: rem(30px),
+    tablet: rem(38px),
+    wide: rem(50px),
+);
+$h--4: (
+    base: rem(35px),
+    mobile: rem(25px),
+    tablet: rem(30px),
+    wide: rem(35px),
+);
+$h--5: (
+    base: rem(24px),
+    mobile: rem(22px),
+    tablet: rem(22px),
+    wide: rem(24px),
+);
+$h--6: (
+    base: rem(18px),
+    mobile: rem(15px),
+    tablet: rem(15px),
+    wide: rem(18px),
+);
+$p: rem(18px);
+$p--large: rem(18px);
+$p--medium: rem(16px);
+$p--small: rem(16px);
+$breakpoints: (
+    mobile: 320px,
+    tablet: 768px,
+    wide: 1300px,
+) !default;

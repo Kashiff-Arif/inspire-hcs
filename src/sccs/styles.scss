@@ -1,0 +1,146 @@
+
+@import 'bootstrap-customize';
+@import'../../node_modules/bootstrap/scss/bootstrap.scss'; 
+@import "import";
+.contentWrapper{
+    padding-top:134px;
+}
+figure{
+    margin:0;
+}
+section{
+    padding:rem(100px) 0;
+}
+.sectionHead{
+    &__subtitle{
+        font-size:12px;
+        font-weight:600;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        display:block;
+        margin-bottom: rem(20px);
+        color:#315E51;
+    }
+    &__title{
+        font-size:rem(60px);
+        margin-bottom:17px;
+    }
+    p{
+        margin:0;
+    }
+}
+.readmore{
+    font-size:rem(16px);
+    font-weight:600;
+    @include desktop-hover{
+        text-decoration: underline;
+    }
+}
+
+.error-page{
+    .sectionHead{
+        max-width:800px;
+    }
+    &__wrapper{
+        display:flex;
+        flex-direction: column;
+        align-items: start;
+        gap:rem(40px);
+        >div{
+            flex:1;
+            width:100%;
+        }
+        @media (min-width:1000px){
+            flex-direction: row;
+            align-items: center;
+            >div{
+                &:last-child{
+                    flex:none;
+                    min-width:400px;
+                    width:400px;
+                }
+            }
+        }
+    }
+    &__suggestion{
+        ul{
+            list-style: none;
+            border-top:1px solid var(--primary);
+            li{
+                border-bottom:1px solid var(--primary);
+                a{
+                    font-size:rem(34px);
+                    font-weight:500;
+                    font-family: $secondary-font; 
+                    padding:rem(18px) 0;
+                    display:flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    position: relative;
+                    &:after{
+                        content:"";
+                        position: relative;
+                        background-image: url("data:image/svg+xml,%3Csvg width='14' height='12' viewBox='0 0 14 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M-7.80821e-05 5.29192H11.8439L11.2139 5.79592L5.45392 -7.9155e-05H7.25392L13.1399 5.93992L7.23592 11.8799H5.43592L11.2139 6.08392L11.8439 6.58792H-7.80821e-05V5.29192Z' fill='%23203E39'/%3E%3C/svg%3E%0A");
+                        width:14px;
+                        height:22px;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        display: inline-block;
+                        left:0;
+                        transition: .5s ease all;
+                    }
+                    @include desktop-hover{
+                        &:after{
+                            left:5px;
+                        }
+                    }
+                    @media (max-width:999px){
+                        font-size:rem(30px);
+                    }
+                    @media (max-width:767px){
+                        font-size:rem(28px);
+                        padding:rem(14px) 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width:999px){
+    .show-on-tablet{
+        display:block !important;
+    }
+    section{
+        padding:rem(50px) 0;
+    }
+    .sectionHead{
+        &__title{
+            font-size:rem(48px);
+        }
+    }
+    .contentWrapper{
+        padding-top:120px;
+    }
+    
+}
+@media (max-width:767px){
+    .sectionHead{
+        &__title{
+            font-size:rem(40px);
+        }
+    }
+    .contentWrapper{
+        padding-top:125px;
+    }
+}
+@media (max-width:575px){
+    .sectionHead{
+        &__title{
+            font-size:rem(36px);
+        }
+    }
+}
