@@ -46,7 +46,7 @@
                     </ul>
                 </nav>
                 <div class="button-row">
-                    <a href="contact" class="btn btn-primary">
+                    <a href="request-care" class="btn btn-primary">
                         Request Care
                     </a>
                 </div>

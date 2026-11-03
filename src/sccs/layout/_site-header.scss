@@ -140,7 +140,10 @@
         }
     }
     &.sticky{
-         transform: translateY(-43px);
+         transform: translateY(-45px);
+         @media (max-width:767px){
+            transform: translateY(-48px);
+         }
          .btn{
                 padding-top:12px;
                 padding-bottom: 12px;

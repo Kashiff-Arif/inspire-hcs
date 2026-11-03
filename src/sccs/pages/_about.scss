@@ -11,7 +11,8 @@
 }
 
 .about-intro{
-    padding:0 24px;
+    margin:0 24px;
+    padding:0;
     border-bottom: 1px solid var(--primary);
     img{
         width: 100%;
@@ -46,6 +47,7 @@
         letter-spacing: 2px;
         display:block;
         margin-bottom: rem(20px);
+        color:#315E51;
     }
     h2{
         font-size:rem(40px);
@@ -182,7 +184,7 @@
 
 @media (max-width:999px){
     .about-intro{
-        padding:0 12px;
+        margin:0 12px;
         &__content{
             flex-direction: column;
             align-items: start;

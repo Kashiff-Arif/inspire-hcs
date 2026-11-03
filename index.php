@@ -2,19 +2,6 @@
 $ishome = 1;
 include_once "includes/base.php"; 
 ?>
- <!-- <div class="page-loader" id="pageLoader">
-        <div class="loader-content">
-
-             <svg width="697" height="579" viewBox="0 0 697 579">
-                <use xlink:href="#logo"></use>
-            </svg>
-
-            <div class="loader-progress">
-                <span class="loader-progress-bar"></span>
-            </div>
-
-        </div>
-    </div> -->
 <?php include_once "includes/header.php"; ?>
 
 
@@ -24,9 +11,23 @@ include_once "includes/base.php";
         <div class="contentWrapper">
             <!-- Hero Section -->
            <section class="hero">
-                <figure class="hero__image">
-                    <img src="src/images/home/hero-banner.webp" width="1392" height="760" class="img-fluid" loading="lazy" alt="Hero Banner">
-                </figure>
+                <div class="swiper">
+                   <div class="swiper-wrapper">
+                         <div class="swiper-slide">
+                            <figure class="hero__image">
+                                <img src="src/images/home/hero-banner.webp" width="1392" height="760" class="img-fluid" loading="lazy" alt="Hero Banner">
+                            </figure>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="hero__image">
+                                <img src="src/images/home/hero-banner2.webp" width="1392" height="760" class="img-fluid" loading="lazy" alt="Hero Banner">
+                            </figure>
+                        </div>
+                   </div>
+                     <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+               
                 <div class="container">
                     <div class="hero__info">
                         <div class="hero__info--item">
@@ -76,17 +77,19 @@ include_once "includes/base.php";
             <section class="services">
                 <div class="container">
                     <div class="services__wrapper">
-                        <div class="sectionHead">
-                            <h2 class="sectionHead__title">The support your family needs</h2>
-                            <div class="button-row mt-30">
-                                <a href="services" class="readmore">All services</a>
+                        <div class="stick-col">
+                            <div class="sectionHead">
+                                <h2 class="sectionHead__title">The support your family needs</h2>
+                                <div class="button-row mt-30">
+                                    <a href="services" class="readmore">All services</a>
+                                </div>
                             </div>
                         </div>
                         <div class="services__items">
                             <div class="card">
                                 <div class="d-flex gap-4">
                                     <figure class="card__image">
-                                        <img src="src/images/home/services/img1.webp" alt="" class="img-fluid" loading="lazy" width="1200" height="896">
+                                        <img src="src/images/services/companion-care-img.jpg" alt="" class="img-fluid" loading="lazy" width="1200" height="896">
                                     </figure>
                                     <div class="card__detail">
                                         <span>I.</span>
@@ -106,7 +109,7 @@ include_once "includes/base.php";
                             <div class="card">
                                 <div class="d-flex gap-4">
                                     <figure class="card__image">
-                                        <img src="src/images/home/services/img1.webp" alt="" class="img-fluid" loading="lazy" width="1200" height="896">
+                                        <img src="src/images/services/personal-care.jpg" alt="" class="img-fluid" loading="lazy" width="1200" height="896">
                                     </figure>
                                     <div class="card__detail">
                                         <span>II.</span>
@@ -126,7 +129,7 @@ include_once "includes/base.php";
                             <div class="card">
                                 <div class="d-flex gap-4">
                                     <figure class="card__image">
-                                        <img src="src/images/home/services/img1.webp" alt="" class="img-fluid" loading="lazy" width="1200" height="896">
+                                        <img src="src/images/services/family-relief.jpg" alt="" class="img-fluid" loading="lazy" width="1200" height="896">
                                     </figure>
                                     <div class="card__detail">
                                         <span>III.</span>

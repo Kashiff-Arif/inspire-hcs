@@ -30,7 +30,7 @@ module.exports = function (grunt) {
                     // "src/js/ScrollSmoother.min.js",
                     // "src/js/ScrollToPlugin.min.js",
                     "src/js/jquery-3.6.0.min.js",
-                    // "src/js/swiper-bundle.8.4.7.min.js",
+                    "src/js/swiper-bundle.8.4.7.min.js",
                     "src/js/jquery.nice-select.js",
                 ],
 
@@ -40,7 +40,7 @@ module.exports = function (grunt) {
             css: {
                 src: [
                     "src/css/nice-select.css",
-                    // "src/css/swiper-bundle.8.4.7.min.css",
+                    "src/css/swiper-bundle.8.4.7.min.css",
                     "src/css/main.css",
                 ],
 

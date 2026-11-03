@@ -24,7 +24,7 @@
         display:flex;
         flex-wrap:wrap;
         gap:12px;
-        padding-top:5px;
+        padding-top:8px;
     }
     &__image{
         max-width:120px;
@@ -36,9 +36,6 @@
         &__title{
             font-weight:600;
         }
-        &__subtitle{
-            color:#B7C8B2;
-        }
         p{
             @media (min-width:1000px){
                 font-size:rem(20px);
@@ -48,7 +45,12 @@
     &__content{
         padding:rem(50px);
         background-color: var(--primary);
-        color:#F7F5EE
+        color:#F7F5EE;
+        .sectionHead{
+            &__subtitle{
+            color:#B7C8B2;
+        }
+        }
     }
     &__link{
         display:flex;

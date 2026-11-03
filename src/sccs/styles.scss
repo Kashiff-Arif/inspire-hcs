@@ -107,6 +107,23 @@ section{
     }
 }
 
+.swiper-pagination{
+    bottom: 50px !important;
+    @media (max-width:767px){
+        bottom:25px !important;
+    }
+    .swiper-pagination-bullet{
+        width:10px;
+        height:10px;
+        transition: .5s ease all;
+        &.swiper-pagination-bullet-active{
+            background-color: var(--primary);
+            width:25px;
+            border-radius: 10px;;
+        }
+    }
+}
+
 
 
 

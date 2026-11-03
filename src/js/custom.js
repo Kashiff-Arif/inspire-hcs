@@ -29,36 +29,38 @@ var hcs = {
     });
           $('select').niceSelect();
 
+             $(".stick-col .sectionHead").stick_in_parent({
+                parent: ".services__wrapper",
+                offset_top: 100
+            });
           $(".privacy-notice__left-side").stick_in_parent({ container: $(".contentWrapper"), offset_top: 135 });
+          
+
+       const swiper = new Swiper('.swiper', {
+            effect: "fade",
+            fadeEffect: {
+                crossFade: true,
+            },
+             spaceBetween: 10,
+            speed: 1000,
+
+            autoHeight: true,
+
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
     
     },
 
 
 };
 
-// const loader = document.getElementById("pageLoader");
-// const progressBar = document.querySelector(".loader-progress-bar");
-
-// let progress = 0;
-
-// if (loader) {
-//   const loaderInterval = setInterval(() => {
-//     progress += Math.floor(Math.random() * 5) + 1;
-
-//     if (progress >= 100) {
-//       progress = 100;
-//       clearInterval(loaderInterval);
-
-//       setTimeout(() => {
-//         loader.classList.add("hide");
-//       }, 300);
-//     }
-
-//     if (progressBar) {
-//       progressBar.style.width = `${progress}%`;
-//     }
-//   }, 80);
-// }
 
 // document.addEventListener("DOMContentLoaded", () => {
 //     gsap.registerPlugin(ScrollTrigger, ScrollSmoother);

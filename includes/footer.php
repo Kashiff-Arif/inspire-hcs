@@ -3,7 +3,7 @@
         <div class="footer__cta">
             <h2>Care that feels like home.</h2>
             <div class="button-row">
-                <a href="contact" class="btn btn-secondary">Request Care</a>
+                <a href="request-care" class="btn btn-secondary">Request Care</a>
             </div>
         </div>
         <div class="footer__main">
